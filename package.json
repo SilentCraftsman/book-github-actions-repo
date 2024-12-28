@@ -4,7 +4,6 @@
   "description": "A simple PUG/SaaS demo webpage",
   "main": "gulpfile.babel.js",
   "dependencies": {
-    "gulp": "^4.0.2",
     "gulp-pug-3": "^1.2.2"
   },
   "overrides": {
@@ -12,6 +11,7 @@
     "glob-parent": "6.0.2"
   },
   "devDependencies": {
+    "gulp": "^5.0.0",
     "gulp4-run-sequence": "^1.0.0"
   },
   "scripts": {
@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/lgmorand/book-github-actions-repo/issues"
   },
-  "homepage": "https://github.com/lgmorand/book-github-actions-repo#readme"
+  "homepage": "https://github.com/lgmorand/book-github-actions-repo#readme",
+  "keywords": []
 }
