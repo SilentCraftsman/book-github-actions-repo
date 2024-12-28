@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main]
 
-  workflow_dispatch: # Lancement manuel (ferrara)
+  workflow_dispatch: # Lancement manuel
 
 jobs:
   build:
@@ -20,6 +20,9 @@ jobs:
       - run: npm install
 
       - run: gulp build
+
+      # Ajouter une étape pour vérifier si le dossier dest/ existe réellement
+      - run: ls -l dest/
 
       - uses: actions/upload-artifact@v3
         with:
